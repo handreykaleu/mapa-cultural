@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Cultural de Mari</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Mapa Cultural</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="map-container">
+                <h2>Explore a Cultura Local</h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-category="todos">Todos</button>
+                    <button class="filter-btn" data-category="museu">Museus</button>
+                    <button class="filter-btn" data-category="teatro">Teatros</button>
+                    <button class="filter-btn" data-category="show">Shows</button>
+                </div>
+                <div id="map"></div>
+            </section>
+
+            <section class="featured-content">
+                <h2>Destaques da Semana</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250.png?text=Exposição+de+Arte" alt="Exposição de Arte Moderna">
+                        <h3>Exposição de Arte Moderna</h3>
+                        <p>Descubra as obras de artistas contemporâneos que estão moldando o futuro da arte.</p>
+                        <a href="#" class="card-link">Saiba Mais</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250.png?text=Show+Acústico" alt="Show Acústico">
+                        <h3>Show Acústico no Parque</h3>
+                        <p>Uma noite relaxante com música ao vivo sob as estrelas. Traga sua família e amigos.</p>
+                        <a href="#" class="card-link">Ver Detalhes</a>
+                    </div>
+                    <div class="card">
+                        <img src="https://via.placeholder.com/400x250.png?text=Peça+Teatral" alt="Peça Teatral Clássica">
+                        <h3>Peça Teatral Clássica</h3>
+                        <p>Uma adaptação imperdível de um clássico da literatura mundial em um palco histórico.</p>
+                        <a href="#" class="card-link">Comprar Ingressos</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mapa Cultural. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
