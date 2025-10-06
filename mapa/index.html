@@ -13,18 +13,23 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-            <h1>Mapa Cultural</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<header>
+    <div class="container">
+        <h1><a>Mapa Cultural de Mari</a></h1>
+        <nav>
+            <div id="user-logged-out">
+                <a href="login.html" class="button">Login</a>
+                <a href="cadastro.html" class="button-primary">Cadastre-se</a>
+            </div>
+
+            <div id="user-logged-in" style="display: none;">
+                <span id="user-greeting"></span>
+                <a href="adicionar-ponto.html" class="button-primary">Adicionar Ponto</a>
+                <button id="logout-button" class="button">Sair</button>
+            </div>
+        </nav>
+    </div>
+</header>
 
     <main>
         <div class="container">
