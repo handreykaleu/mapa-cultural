@@ -1,0 +1,49 @@
+// Este bloco define o "gerador" do Prisma Client. Ele vai ler os modelos
+// abaixo e criar um cliente de banco de dados totalmente tipado para você
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id                Int             @id @default(autoincrement())
+  nome              String
+  email             String          @unique
+  cpf               String          @unique
+  senha_hash        String
+  segmento_cultural String
+  data_cadastro     DateTime        @default(now())
+  pontosCulturais   PontoCultural[] // <- relação (1:N)
+}
+
+model PontoCultural {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  descricao String?
+  latitude  Float
+  longitude Float
+  criadoEm  DateTime @default(now())
+
+  usuario   Usuario? @relation(fields: [usuarioId], references: [id])
+  usuarioId Int?
+
+  // Relação: Um ponto cultural pode ter vários eventos
+  eventos Evento[]
+}
+
+model Evento {
+  id        Int      @id @default(autoincrement())
+  nome      String
+  descricao String?
+  data      DateTime
+  criadoEm  DateTime @default(now())
+
+  // Relação: Pertence a um Ponto Cultural
+  local   PontoCultural @relation(fields: [localId], references: [id])
+  localId Int
+}
