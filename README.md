@@ -1,8 +1,8 @@
-🚀 Visão geral
+#🚀 Visão geral
 
 Uma aplicação para cadastrar, pesquisar e exibir locais e eventos culturais (museus, centros culturais, pontos de arte, etc.).
 
-🔧 Tecnologias
+#🔧 Tecnologias
 
 Node.js (>= 18)
 
@@ -14,7 +14,7 @@ Banco de dados: PostgreSQL / SQLite (ajuste conforme seu .env)
 
 Framework HTTP (Express, Fastify ou outro) — ajuste conforme o projeto
 
-📦 Pré-requisitos
+#📦 Pré-requisitos
 
 Node.js (recomenda-se a versão LTS atual)
 
@@ -22,7 +22,7 @@ npm ou yarn
 
 um banco de dados (Postgres, MySQL ou SQLite)
 
-🔁 Instalação (local)
+#🔁 Instalação (local)
 
 # clonar o repositório
 git clone https://github.com/handreykaleu/mapa-cultural.git
@@ -33,7 +33,7 @@ npm install
 # ou
 # yarn install
 
-🛠 Configuração do ambiente
+#🛠 Configuração do ambiente
 
 Crie um arquivo .env na raiz do projeto (não comite .env real).
 
@@ -48,7 +48,7 @@ PORT=3000
 # Outras variáveis necessárias pelo projeto (JWT_SECRET, etc.)
 JWT_SECRET=troque_esta_chave
 
-🗄 Banco de dados (Prisma)
+#🗄 Banco de dados (Prisma)
 
 # gera o cliente prisma após alterar schema ou .env
 npx prisma generate
@@ -59,7 +59,7 @@ npx prisma migrate dev --name init
 # abrir o studio (interface web do prisma)
 npx prisma studio
 
-🏃 Executando localmente
+#🏃 Executando localmente
 
 # ambiente de desenvolvimento (com restart automático)
 npm run dev
@@ -70,7 +70,7 @@ npm run build
 # iniciar a versão compilada
 npm start
 
-📁 Estrutura sugerida do projeto
+#📁 Estrutura sugerida do projeto
 
 mapa-cultural/
 ├─ prisma/
@@ -86,6 +86,6 @@ mapa-cultural/
 ├─ tsconfig.json
 └─ README.md
 
-📜 Licença
+#📜 Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo LICENSE.
