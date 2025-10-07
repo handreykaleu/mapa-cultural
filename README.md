@@ -1,9 +1,3 @@
-# mapaCultural
-
-**Mapa Cultural** é uma API/serviço (backend) construída com Node.js e TypeScript para gerenciar e expor pontos, eventos e informações culturais de uma cidade/região. Este README é um modelo completo que você pode colar no `README.md` do repositório — ajuste as seções marcadas como `TODO` conforme necessário.
-
----
-
 ## 🚀 Visão geral
 
 Uma aplicação para cadastrar, pesquisar e exibir locais e eventos culturais (museus, centros culturais, pontos de arte, etc.). Ideal para integrar com um frontend (web ou mobile), agregando informações de cada ponto cultural e possibilitando filtros por categorias, datas e localização.
@@ -18,19 +12,6 @@ Uma aplicação para cadastrar, pesquisar e exibir locais e eventos culturais (m
 * Outras dependências: consulte `package.json` para lista completa
 
 > O repositório já contém `prisma/` e configurações TypeScript — ajuste os detalhes do DB em `.env`.
-
-## ✅ Recursos / Endpoints (exemplos)
-
-> Estes são exemplos comuns para uma API cultural. Atualize com os endpoints reais do seu `src/`.
-
-* `POST /auth/login` - autenticação (se houver)
-* `GET /pontos` - listar pontos culturais
-* `GET /pontos/:id` - detalhe de um ponto
-* `POST /pontos` - criar novo ponto
-* `PUT /pontos/:id` - atualizar ponto
-* `DELETE /pontos/:id` - excluir ponto
-* `GET /eventos` - listar eventos
-* `GET /busca?query=…&categoria=…` - busca/filter
 
 ## 📦 Pré-requisitos
 
@@ -63,11 +44,7 @@ DATABASE_URL="postgresql://USER:PASSWORD@HOST:PORT/DATABASE?schema=public"
 
 # Porta da API
 PORT=3000
-
-# Outras variáveis necessárias pelo projeto (JWT_SECRET, etc.)
-JWT_SECRET=troque_esta_chave
 ```
-
 > Ajuste as variáveis conforme as necessidades do seu projeto.
 
 ## 🗄 Banco de dados (Prisma)
@@ -135,23 +112,6 @@ mapa-cultural/
 └─ README.md
 ```
 
-## 🤝 Como contribuir
-
-1. Fork o repositório
-2. Crie uma branch: `git checkout -b feat/minha-funcionalidade`
-3. Faça as mudanças e commit: `git commit -m "feat: descrição curta"`
-4. Envie para o repositório remoto e abra um Pull Request
-
 ## 📜 Licença
 
 Este projeto está sob a licença **MIT**. Veja o arquivo `LICENSE`.
-
----
-
-Se quiser, eu posso:
-
-* gerar automaticamente um `README.md` já pronto e com comandos exatos retirados do `package.json` (posso buscar os scripts do `package.json` e inserir aqui),
-* traduzir para inglês,
-* adicionar badges (CI, cobertura, versão do Node) com base no `package.json`.
-
-Diga qual dessas opções você prefere que eu faça agora — ou eu posso já inserir o `README.md` final no repositório (copie/cole) se quiser.
