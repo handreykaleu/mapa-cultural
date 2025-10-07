@@ -1,6 +1,6 @@
 ## 🚀 Visão geral
 
-Uma aplicação para cadastrar, pesquisar e exibir locais e eventos culturais (museus, centros culturais, pontos de arte, etc.). Ideal para integrar com um frontend (web ou mobile), agregando informações de cada ponto cultural e possibilitando filtros por categorias, datas e localização.
+Uma aplicação para cadastrar, pesquisar e exibir locais e eventos culturais (museus, centros culturais, pontos de arte, etc.). 
 
 ## 🔧 Tecnologias
 
